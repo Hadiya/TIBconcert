@@ -9,7 +9,7 @@ gem 'mysql2'
 
 gem 'json'
 gem "faraday", "~> 0.8.6"
-gem "system_timer", "~> 1.2.4"
+#gem "system_timer", "~> 1.2.4"
 gem "rest-client", "~> 1.6.7"
 
 
