@@ -12,6 +12,7 @@ gem "faraday", "~> 0.8.6"
 gem "system_timer", "~> 1.2.4"
 gem "rest-client", "~> 1.6.7"
 
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
