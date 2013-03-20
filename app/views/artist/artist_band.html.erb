@@ -1,0 +1,14 @@
+<table>
+	<tr><td>
+<h3 > Artist/Bands Registration With Facebook </h3></td>
+<%=form_tag artist_create_url do %>
+<div class="form_row">
+    <tr><td align="center"><label for="type">Category:</label></tr></td>
+    <tr><td align="center"><br><%= radio_button_tag :type, 'Artist', true %> Artist</tr></td>
+    <tr><td align="center"><br><%= radio_button_tag :type, 'Band' %> Band</tr></td>
+</div>
+ <div class="actions">
+ <tr><td align="center"><%= submit_tag "Select type for Facebook login",:class=> "btn-primary" %></tr></td>
+  </div>
+<%end%>
+</table>
