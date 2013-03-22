@@ -13,9 +13,7 @@ TibConcert::Application.configure do
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
-
-
- config.whiny_nils = true
+  config.whiny_nils = true
     
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
