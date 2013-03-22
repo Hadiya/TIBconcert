@@ -1,7 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
     def connection
-      Faraday.new(:url => 'http://pinak.cs:3000') do |faraday|
+       
+      #Faraday.new(:url => 'http://pinak.cs:3000') do |faraday|
+      Faraday.new(:url => 'http://afternoon-depths-5907.herokuapp.com') do |faraday|
       faraday.request  :url_encoded             # form-encode POST params
       faraday.response :logger                  # log requests to STDOUT
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
