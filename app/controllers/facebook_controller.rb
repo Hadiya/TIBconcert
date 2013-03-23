@@ -10,7 +10,7 @@ class FacebookController < ApplicationController
     else
     req= conn.post '/api/fan/fb/auth.json', {:fan => { :email => env['omniauth.auth'].info['email'], :fb_auth_token => env['omniauth.auth'].credentials.token,:password => env['omniauth.auth'].uid,:ip => request.remote_ip }}
     @m = JSON.parse(req.body)
-    redirect_to http://rocky-thicket-4077.herokuapp.com/fans/tib_logina,:notice => @m["message"]
+    redirect_to fans_tib_logina_url,:notice => @m["message"]
     end
   end
   def destroy
