@@ -67,8 +67,8 @@ TibConcert::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
    config.assets.debug = true
-   config.FACEBOOK_APP_ID      = '340501396062129'
-   config.facebook_secret    = 'c69cf9f0eb873a1bf7835a654a4b38cf'
+   config.FACEBOOK_APP_ID      = '172721912882206'
+   config.facebook_secret    = '479145601c5a34d7f5aba82e062be9fe'
 end
 
 
