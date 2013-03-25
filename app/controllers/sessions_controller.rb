@@ -8,7 +8,7 @@ def create
   @a=req.body.include?"404"
  	if (@a == true)
      flash[:error] = @r["errors"]
-    redirect_to fans_tib_login_url
+    redirect_to root_url
   end
   if (@a == false)
     flash[:success] = @r["message"]
@@ -27,7 +27,7 @@ end
 def destroy
  	session[:email] = nil
   cookies.delete(:remember_token)
- 	redirect_to fans_tib_login_url
+ 	redirect_to root_url
 end
 end
 

@@ -2,7 +2,7 @@
 class FacebookController < ApplicationController
      
   def create
-    conn=connection
+  conn=connection
     if(params[:type].present? )
     req= conn.post '/api/back_stage/fb/auth.json', {:back_stage => { :type => params[:type],:email => env['omniauth.auth'].info['email'], :fb_auth_token => env['omniauth.auth'].credentials.token }}
     @m = JSON.parse(req.body)

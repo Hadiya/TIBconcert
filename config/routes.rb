@@ -1,22 +1,23 @@
 TibConcert::Application.routes.draw do
 
   resources :sessions 
+  
 
   get "fans/create"
-  get "fans/tib_login"
   get "fans/tib_logina"
   get "fans/new"
   get "fans/exam"
   
   post "fans/create"
   post "fans/new"
-  post "fans/tib_login"
   post "fans/tib_logina"
   get "artist/create"
   get "artist/artist_band"
   get "artist/artist_success" 
   post "artist/create"
   post "artist/artist_band"
+  
+  root :to => 'fans#tib_login'
 
   #delete "sessions/destroy"
   get '/logout' => "sessions#destroy", :as => "logout"
