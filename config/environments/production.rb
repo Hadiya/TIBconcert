@@ -68,8 +68,10 @@ TibConcert::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
    config.assets.debug = true
    config.action_mailer.default_url_options = { :host => 'rocky-thicket-4077.herokuapp.com' }
-   config.FACEBOOK_APP_ID      = '503806902990007'
-   config.facebook_secret    = '62f4fdf3c1e048d1d3a2d44787c085bd'
+   #config.FACEBOOK_APP_ID     
+    ENV['FACEBOOK_KEY'] = '503806902990007'
+   #config.facebook_secret 
+   ENV['FACEBOOK_SECRET']   = '62f4fdf3c1e048d1d3a2d44787c085bd'
 end
 
 
