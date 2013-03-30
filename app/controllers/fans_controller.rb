@@ -20,6 +20,10 @@ class FansController < ApplicationController
      end 
   end
   def tib_logina
+    if(!current_user.present?)
+        flash[:error]="Please logined "
+        redirect_to root_url
+     end 
   end
   def exam
     conn = connection
